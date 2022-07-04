@@ -1,0 +1,13 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: simple
+endpoint_name: CHANGE-TO-YOUR-ENDPOINT
+egress_public_network_access: disabled
+model:
+  name: mlflow-test-model
+  version: 1
+  path: model/
+  type: mlflow_model
+#environment_variables:
+#  MLFLOW_MODEL_FOLDER: model
+instance_type: Standard_F2s_v2
+instance_count: 1
