@@ -1,0 +1,5 @@
+$schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
+name: mlflow
+version: v1
+build:
+  path: ./environment/
